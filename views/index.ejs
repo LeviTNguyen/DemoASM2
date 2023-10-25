@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      /* Reset some default styles for better consistency across browsers */
+body, h1, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply general styles to the entire page */
+body {
+  font-family: Arial, sans-serif; /* Define a default font family */
+  background-color: #f0f0f0; /* Set a background color */
+  text-align: center; /* Center-align content in the body */
+  padding: 20px; /* Add some padding around the content */
+}
+
+/* Style the page title (h1) */
+h1 {
+  color: #333; /* Set a text color for the title */
+  font-size: 28px; /* Adjust the font size as needed */
+  margin: 20px 0; /* Add spacing above and below the title */
+}
+
+/* Style the welcome message (p) */
+p {
+  color: #666; /* Set a text color for the welcome message */
+  font-size: 18px; /* Adjust the font size as needed */
+  margin: 10px 0; /* Add spacing above and below the message */
+}
+
+/* Style the "Please login" link */
+a {
+  display: inline-block; /* Make it an inline-block element for proper spacing */
+  text-decoration: none; /* Remove underlines from links */
+  color: #007bff; /* Set a link color */
+  font-size: 16px; /* Adjust the font size as needed */
+  margin-top: 20px; /* Add spacing above the link */
+}
+
+/* Additional styles for links on hover (optional) */
+a:hover {
+  color: #0056b3; /* Change link color on hover */
+}
+
+    </style>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="/users/login">Please login</a>
+  </body>
+</html>
